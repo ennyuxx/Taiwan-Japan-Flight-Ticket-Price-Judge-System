@@ -35,7 +35,7 @@ _Taiwan–Japan Flight Ticket Price Judge System_
 project/
 │── mainvv.py        # 主程式（互動式流程）
 │── statsvv.py       # 資料處理、分位數計算、視覺化
-│── 機票資料.csv      # 票價資料（使用者需自備）
+│── 機票資料.csv      # 票價資料
 │── README.md        # 說明文件
 ```
 
