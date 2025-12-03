@@ -120,10 +120,3 @@ python mainvv.py
 
 可協助使用者快速了解票價分布情形。
 
----
-
-
-## 📄 License
-
-本專案採用 MIT License，可自由使用、修改與分享。
-
