@@ -63,7 +63,17 @@ pip install pandas matplotlib
 python mainvv.py
 ```
 
-3. 依畫面提示輸入：
+3. 依畫面提示輸入欲使用功能之編號：
+
+- 1. 查看圖表
+- 2. 使用機票價格判別
+- 3. 離開系統
+
+---
+
+## 價格判別系統
+
+依畫面提示輸入：
 
 - 出發地（TPE / NRT）
 - 飛行日期（YYYY/MM/DD）
@@ -72,24 +82,6 @@ python mainvv.py
 - 票價（正整數）
 
 系統將根據統計分位數輸出價格判斷與中文購買建議。
-
----
-
-## 視覺化功能
-
-主選單可選擇：
-
-```
-1. 查看圖表（價格分佈）
-```
-
-提供以下圖表：
-
-- Overall Ticket Price Histogram  
-- Ticket Price Boxplot by Route Direction  
-- Ticket Price Boxplot by Time Slot  
-
-可協助使用者快速了解票價分布情形。
 
 ---
 
@@ -110,6 +102,25 @@ python mainvv.py
 - **> p75：很貴（不建議買）**
 
 ---
+
+## 視覺化圖表功能
+
+主選單可選擇：
+
+```
+1. 查看圖表（價格分佈）
+```
+
+提供以下圖表：
+
+- Overall Ticket Price Histogram  
+- Ticket Price Boxplot by Route Direction  
+- Ticket Price Boxplot by Time Slot  
+
+可協助使用者快速了解票價分布情形。
+
+---
+
 
 ## 📄 License
 
