@@ -1,16 +1,13 @@
-# Taiwan–Japan Flight Ticket Price Judge System
-A Python tool to evaluate Taiwan-Japan flight ticket prices
-
 # 台灣－日本機票價格判別系統  
 _Taiwan–Japan Flight Ticket Price Judge System_
 
-本專案是一個以 Python 撰寫的終端機互動程式，用來協助使用者判斷 **台灣桃園（TPE）↔ 日本東京成田（NRT）** 單程經濟艙機票目前看到的價格是「便宜、合理、偏貴或很貴」。
+本專案是一個以Python撰寫的終端機互動程式，用來協助使用者判斷 **台灣桃園（TPE）↔ 日本東京成田（NRT）** 傳統航空單程經濟艙機票目前看到的價格是「便宜、合理、偏貴或很貴」。
 
 系統會讀取實際蒐集的票價資料（`機票資料.csv`），根據不同條件（出發地、目的地、季節、起飛時段）計算第 25 / 50 / 75 分位數（p25 / p50 / p75），並根據使用者輸入的票價給出中文判斷與購票建議。
 
 ---
 
-## 📌 功能總覽 Features
+## 功能總覽
 
 - 讀取與清理機票資料（CSV）
 - 自動建立「方向」欄位（TPE→NRT / NRT→TPE）
@@ -26,13 +23,13 @@ _Taiwan–Japan Flight Ticket Price Judge System_
   - 票價（正整數）
 - 價格判斷：非常便宜／偏便宜或合理價／偏貴／很貴
 - 視覺化統計圖表：  
-  - 票價直方圖  
-  - 依方向的盒鬚圖  
-  - 依起飛時段的盒鬚圖  
+  - 整體票價分布直方圖  
+  - 各航線方向之票價分布箱形圖  
+  - 各起飛時段之票價分布箱形圖  
 
 ---
 
-## 📦 系統架構
+## 系統架構
 
 ```
 project/
@@ -44,8 +41,7 @@ project/
 
 ---
 
-## 🔧 環境需求 Requirements
-
+## 環境需求
 Python 版本需求：
 
 - **Python 3.10 以上（建議 3.11）**
@@ -58,7 +54,7 @@ pip install pandas matplotlib
 
 ---
 
-## 🚀 如何執行程式
+## 如何使用系統？
 
 1. 將 `機票資料.csv` 與程式放在同一資料夾
 2. 在終端機執行：
@@ -79,7 +75,7 @@ python mainvv.py
 
 ---
 
-## 📊 視覺化功能
+## 視覺化功能
 
 主選單可選擇：
 
@@ -93,15 +89,15 @@ python mainvv.py
 - Ticket Price Boxplot by Route Direction  
 - Ticket Price Boxplot by Time Slot  
 
-協助使用者快速了解票價分布情形。
+可協助使用者快速了解票價分布情形。
 
 ---
 
-## 📚 價格判斷邏輯
+## 價格判斷邏輯
 
 判斷依據：
 
-- 出發地 → 目的地
+- 航線方向（出發地 → 目的地）
 - 起飛時段（早／午／晚）
 - 季節（旺／淡／不分）
 - 票價在以下分位數的相對位置：
