@@ -49,7 +49,8 @@ Python 版本需求：
 安裝必要套件：
 
 ```bash
-pip install pandas matplotlib
+pip install pandas
+pip install matplotlib
 ```
 
 ---
