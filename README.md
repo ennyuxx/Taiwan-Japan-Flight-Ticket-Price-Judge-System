@@ -38,13 +38,14 @@ project/
 │── 機票資料.csv      # 票價資料
 │── README.md        # 說明文件
 ```
+![114-1 Python報告：機票系統](https://github.com/user-attachments/assets/855d490b-4787-41f6-a40b-626ab37d021b)
 
 ---
 
 ## 環境需求
 Python 版本需求：
 
-- **Python 3.10 以上（建議 3.11）**
+- **Python 3.11 以上**
 
 安裝必要套件：
 
@@ -55,7 +56,7 @@ pip install matplotlib
 
 ---
 
-## 如何使用系統？
+## 使用者操作手冊
 
 1. 將 `機票資料.csv` 與程式放在同一資料夾
 2. 在終端機執行：
